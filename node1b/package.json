@@ -1,0 +1,15 @@
+cd {
+  "name": "node1b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "value.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "drew",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.69.0",
+    "underscore": "^1.8.3"
+  }
+}

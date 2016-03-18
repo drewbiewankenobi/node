@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js">
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js">
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Current Submissions</title>
+</head>
+<body class="subBacker" ng-controller="contestTroller">
+	<nav>
+	<a href="index.html">Home</a>
+	<a href="submissions.html">Submissions</a>
+	</nav>	
+	<h1>{{greeting}}</h1>
+<div ng-repeat="video in videos">
+	<h2 class="vidBacker">{{video.title}} submitted by {{(video.name)}}</h2>
+	<iframe width="560" height="315" ng-src="{{trust(video.url)}}" frameborder="0" allowfullscreen></iframe>
+	<p>{{video.description}}</p>
+	<p>Current Votes: {{video.votes}} <button ng-click="videoVote(video,$index)">Cast Your Vote</button></p>
+</div>
+<div>
+	<button ng-click="" class="btn btn-danger btn-lg">LET THE CONTEST BEGIN!</button>
+</div>
+</body>
+</html>

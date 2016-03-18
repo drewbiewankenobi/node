@@ -1,0 +1,67 @@
+body {
+	background-image: url(bone-church.jpg);
+	background-size: stretch;
+	background-position: center;
+	font-family: 'Metal Mania'
+}
+
+nav{
+	color:white;
+}
+
+a{
+	color: white;
+}
+
+h1 {
+	color:white;
+	text-align: center;
+	background-color: gray;
+}
+
+button {
+	background-color: red;
+}
+
+.subBacker {
+	background-image: url("http://wallpapercave.com/wp/QKgBmix.jpg");
+	background-size: stretch;
+	background-position: center;
+	/*background-repeat: no-repeat;
+*/}
+
+.vidBacker {
+	background-color: gray;
+	width: auto;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	color: white;
+}
+
+.backer {
+	background-image: url("http://www.netanimations.net/Burning_Guitar.gif");
+	background-position: center;
+	height:200px;
+	width: 200px;
+	color:white;
+	margin-top: 5px;
+}
+
+
+@-webkit-keyframes blinker {  
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.blinker {
+  -webkit-animation-name: blinker;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 3s; 
+}   

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Best Scandinavian Black Metal Video</title>
+</head>
+<body ng-controller="contestTroller">
+	<nav>
+	<a href="index.html">Home</a>
+	<a href="submissions.html">Submissions</a>
+	</nav>
+
+	<h1 class="blinker">Best Scandinavian Black Metal Video Contest</h1>
+
+	<h2>{{submission}}</h2>
+
+	<form ng-submit="videoPush()">
+	 <input ng-model="newVideo.name" placeholder="Your Name">
+	 <input ng-model="newVideo.url" placeholder="Youtube Url">
+	 <input ng-model="newVideo.title" placeholder="Video Title">
+	 <input ng-model="newVideo.description" placeholder="Description">
+	 <input class ="backer" type="submit">
+	 <br>
+</body>
+</html>
